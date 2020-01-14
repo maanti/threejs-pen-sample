@@ -261,9 +261,9 @@ function createSnow() {
     for (let i = 0; i < flakeCount; i++) {
         const flakeMesh = new THREE.Mesh(flakeGeometry, flakeMaterial);
         flakeMesh.position.set(
-            (Math.random() - 0.5) * 40,
+            (Math.random() - 0.5) * 15,
             (Math.random() - 0.5) * 20,
-            (Math.random() - 0.5) * 40
+            (Math.random() - 0.5) * 15
         );
         snow.add(flakeMesh);
     }
