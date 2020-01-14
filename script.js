@@ -31,6 +31,7 @@ function init() {
 
     setUpPointLight();
     setUpSkyLight();
+    setUpSpotLight();
     initMaterials();
 
     createFloor();
@@ -72,6 +73,13 @@ function setUpPointLight() {
     bulbLight.position.set(0, 2, 0);
     bulbLight.castShadow = true;
     scene.add(bulbLight);
+}
+
+function setUpSpotLight() {
+    const spotLight = new THREE.SpotLight(0xffffff, 10, 0, 0.4);
+    spotLight.position.set(-2, 4, 0.6);
+    spotLight.castShadows = true;
+    scene.add(spotLight);
 }
 
 function setUpSkyLight() {
