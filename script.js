@@ -254,7 +254,7 @@ function createScene() {
 
 function createSnow() {
     const flakeCount = 12000;
-    const flakeGeometry = new THREE.TetrahedronGeometry(0.015);
+    const flakeGeometry = new THREE.ConeGeometry(0.012, 0.001, 7);
     const flakeMaterial = new THREE.MeshPhongMaterial({color: 0xffffff});
     const snow = new THREE.Group();
 
